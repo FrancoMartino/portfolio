@@ -16,7 +16,7 @@ export default function Button(attributes: Interface) {
     <button
       className={`${
         attributes.className
-      } relative inline-flex w-min items-center select-none gap-2 p-4 px-6 rounded-full shadow-gray-700/40 transition-colors duration-300
+      } relative inline-flex w-min items-center select-none gap-2 p-4 px-6 rounded-full shadow-gray-700/30 transition-colors duration-300
         ${
           attributes.secondary
             ? !attributes.transparent

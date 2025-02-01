@@ -79,6 +79,12 @@ export const TECHS = [
     icon: "img/icons/notion.webp",
     link: "https://notion.com",
   },
+  {
+    name: "figma",
+    title: "Figma",
+    icon: "img/icons/figma.webp",
+    link: "https://www.figma.com",
+  },
 ];
 
 export const SOFT_SKILLS = [

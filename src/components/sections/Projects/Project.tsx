@@ -30,8 +30,8 @@ export default function Project(attributes: Interface) {
             src={attributes.image}
             alt={attributes.title}
           />
-          <p className="text-gray-300 w-full flex flex-col gap-4 md:w-3/4">
-            <span className="text-lg font-semibold text-gray-400 flex sm:flex-row flex-col gap-2 group">
+          <p className="text-gray-300 w-full flex flex-col gap-2 md:w-3/4">
+            <span className="text-lg font-semibold text-gray-400 flex sm:flex-row flex-col gap-x-2 group">
               <span className="flex flex-row gap-2 items-center">
                 {attributes.openSource ? (
                   <SiGithub className="text-white" size={18} />

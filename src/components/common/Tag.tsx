@@ -12,14 +12,14 @@ export default function Tag(attributes: Interface) {
     <a
       href={attributes.link}
       className={
-        "relative group inline-flex items-center select-none gap-2 p-2 px-4 rounded-full transition-transform duration-300 bg-gray-700 text-white shadow-lg shadow-gray-700/40 hover:scale-[102%] " +
+        "relative group inline-flex items-center select-none gap-2 p-2 px-4 rounded-full transition-transform duration-300 bg-gray-700 text-white shadow-lg shadow-gray-700/30 hover:scale-[102%] " +
         attributes.className
       }
       target="_blank"
     >
       <div className="relative flex items-center gap-2">
         {attributes.icon && (
-          <img alt={attributes.title} src={attributes.icon} className="w-6 md:w-4 aspect-auto" />
+          <img alt={attributes.title} src={attributes.icon} className="max-w-6 md:max-w-4 max-h-6 md:max-h-4" />
         )}
         <span className="whitespace-nowrap">{attributes.title}</span>
       </div>
