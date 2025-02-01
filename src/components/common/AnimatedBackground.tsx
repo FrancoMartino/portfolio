@@ -14,7 +14,7 @@ export default function AnimatedBackground() {
               "bg-gray-400",
             ][i] +
             " blur-3xl " +
-            ["opacity-5", "opacity-10", "opacity-5", "opacity-10", "opacity-5"][
+            ["opacity-5", "opacity-[.03]", "opacity-5", "opacity-[.03]", "opacity-5"][
               i
             ]
           }

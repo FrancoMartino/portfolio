@@ -12,7 +12,7 @@ export default function Tag(attributes: Interface) {
     <a
       href={attributes.link}
       className={
-        "relative group inline-flex items-center select-none gap-2 p-2 px-4 rounded-full transition-transform duration-300 bg-gray-700 text-white hover:scale-[102%] " +
+        "relative group inline-flex items-center select-none gap-2 p-2 px-4 rounded-full transition-transform duration-300 bg-gray-700 text-white shadow-lg shadow-gray-700/40 hover:scale-[102%] " +
         attributes.className
       }
       target="_blank"
