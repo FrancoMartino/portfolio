@@ -22,7 +22,10 @@ export default function Presentation() {
         />
         <Button label="Quiero contactarme" secondary />
         <span className="gap-2 items-center md:flex hidden">
-          <div className="w-2 h-2 rounded-full bg-green-300" />
+          <span className="relative flex size-3">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-300/50 blur-xs"></span>
+            <span className="size-3 rounded-full bg-green-300"></span>
+          </span>
           En linea
         </span>
       </div>

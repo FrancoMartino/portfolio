@@ -23,8 +23,11 @@ export default function Certification(attributes: Interface) {
             {attributes.institution}
             {" • "}
             {attributes.startYear}
-            {" - "}
-            {attributes.endYear ? attributes.endYear : "Presente"}
+            {attributes.endYear == null
+              ? " - Presente"
+              : attributes.endYear == 0
+              ? ""
+              : " - " + attributes.endYear}
           </span>
         </span>
       </div>

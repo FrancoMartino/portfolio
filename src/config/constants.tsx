@@ -1,6 +1,3 @@
-import { SiChromewebstore, SiGithub } from "react-icons/si";
-import { BiGlobe } from "react-icons/bi";
-
 export const TECHS = [
   {
     name: "cpp",
@@ -76,6 +73,12 @@ export const TECHS = [
     icon: "img/icons/powerapps.webp",
     link: "https://powerapps.com",
   },
+  {
+    name: "notion",
+    title: "Notion",
+    icon: "img/icons/notion.webp",
+    link: "https://notion.com",
+  },
 ];
 
 export const SOFT_SKILLS = [
@@ -111,7 +114,7 @@ export const TYPEWRITTER_HEADER = [
   { subtitle: "Actualmente soy", title: "Técnico Electrónico." },
 ];
 
-export const EDUCATION = [
+export const EDUCATIONS = [
   {
     title: "Técnicatura en Electrónica",
     institution: "EEST N°3",
@@ -128,6 +131,34 @@ export const EDUCATION = [
     title: "Ingeniería en Informática",
     institution: "UNDAV",
     startYear: 2025,
+  },
+];
+
+export const COURSES = [
+  {
+    title: "Curso - Scientific Computing with Python",
+    institution: "freeCodeCamp",
+    startYear: 2025,
+  },
+  {
+    title: "Curso - Networking Basics",
+    institution: "Cisco Networking Academy",
+    startYear: 2024,
+  },
+  {
+    title: "Curso - Programación en Python",
+    institution: "Academia BA Emprende",
+    startYear: 2024,
+  },
+  {
+    title: "Certificación - Desarrollo de Apps Moviles",
+    institution: "Google Activate",
+    startYear: 2022,
+  },
+  {
+    title: "Curso - Programación en JavaScript",
+    institution: "Academia BA Emprende",
+    startYear: 2022,
   },
 ];
 

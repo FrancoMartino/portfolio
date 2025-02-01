@@ -13,7 +13,7 @@ export default function About() {
             className="relative rounded-full sm:min-w-48 max-w-64"
           />
         </div>
-        <span className="text-gray-300 mb-4 md:text-left text-center">
+        <span className="text-gray-300 md:text-left text-center">
           <h3 className="lg:text-4xl text-3xl font-bold font-header text-gray-400">
             Franco Martino
           </h3>
