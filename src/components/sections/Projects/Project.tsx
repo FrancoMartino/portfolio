@@ -31,21 +31,23 @@ export default function Project(attributes: Interface) {
             alt={attributes.title}
           />
           <p className="text-gray-300 w-full flex flex-col gap-4 md:w-3/4">
-            <span className="text-lg font-semibold text-gray-400 flex gap-2 items-center group">
-              {attributes.openSource ? (
-                <SiGithub className="text-white" size={18} />
-              ) : (
-                <BiSolidLock className="text-white" size={18} />
-              )}
-              <span
-                className={
-                  "text-white whitespace-nowrap " +
-                  (attributes.link && "group-hover:underline")
-                }
-              >
-                {attributes.title}
+            <span className="text-lg font-semibold text-gray-400 flex sm:flex-row flex-col gap-2 group">
+              <span className="flex flex-row gap-2 items-center">
+                {attributes.openSource ? (
+                  <SiGithub className="text-white" size={18} />
+                ) : (
+                  <BiSolidLock className="text-white" size={18} />
+                )}
+                <span
+                  className={
+                    "text-white whitespace-nowrap " +
+                    (attributes.link && "group-hover:underline")
+                  }
+                >
+                  {attributes.title}
+                </span>
               </span>
-              •
+              <span className="hidden sm:block">•</span>
               <span className="text-gray-400 font-medium text-md">
                 {attributes.year}
               </span>
