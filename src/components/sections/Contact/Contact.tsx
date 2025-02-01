@@ -1,7 +1,23 @@
 import React, { useState } from "react";
 import { BiSolidSend } from "react-icons/bi";
 import Section from "../Section/Section";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast, ToastContentProps } from "react-toastify";
+
+function SuccessToast({ isPaused }: ToastContentProps) {
+  return (
+    <div className="select-none">
+      <span>{"Gracias por contactarme :)"}</span>
+    </div>
+  );
+}
+
+function ErrorToast({ isPaused }: ToastContentProps) {
+  return (
+    <div className="select-none">
+      <span>{"Ups, algo salió mal."}</span>
+    </div>
+  );
+}
 
 export default function Contact() {
   const [name, setName] = useState<string>("");
@@ -20,8 +36,7 @@ export default function Contact() {
 
     try {
       const response = await fetch(
-        //"https://formsubmit.co/ajax/b298594f92fafa5c26babc6fa18ca8ff",
-        "https://formsubmit.co/ajax/francool190@gmail.com",
+        "https://formsubmit.co/ajax/b298594f92fafa5c26babc6fa18ca8ff",
         {
           method: "POST",
           headers: {
@@ -35,22 +50,43 @@ export default function Contact() {
       const result = await response.json();
       console.log(result);
 
-      setName("")
-      setMessage("")
-      setEmail("")
+      setName("");
+      setMessage("");
+      setEmail("");
+      successToast();
     } catch (error) {
       console.error("Error:", error);
-      toast('Wow so easy !');
+      errorToast();
     }
   };
 
+  const successToast = () =>
+    toast(SuccessToast, {
+      autoClose: 2000,
+      className:
+        "bg-green-300 overflow-visible scale-100 ring-1 ring-black/5 rounded-xl flex items-center gap-4 font-semibold text-gray-900 text-lg !font-sans rounded-2xl",
+    });
+
+  const errorToast = () =>
+    toast(ErrorToast, {
+      autoClose: 2000,
+      className:
+        "bg-red-300 overflow-visible scale-100 ring-1 ring-black/5 rounded-xl flex items-center gap-4 font-semibold text-gray-900 text-lg !font-sans rounded-2xl",
+    });
+
   return (
-    <Section id="contact" className="flex flex-col w-full items-center justify-center">
-      <ToastContainer />
+    <Section
+      id="contact"
+      className="flex flex-col w-full items-center justify-center"
+    >
+      <ToastContainer hideProgressBar closeButton={false} />
       <h3 className="text-xl font-bold text-center font-header text-gray-400 mb-4">
         Contacto
       </h3>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full max-w-xl">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col gap-4 w-full max-w-xl"
+      >
         <div className="flex flex-col gap-2">
           <label htmlFor="name">Nombre completo</label>
           <input
