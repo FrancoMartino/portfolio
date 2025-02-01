@@ -20,7 +20,9 @@ export default function Presentation() {
             alert("a");
           }}
         />
-        <Button label="Quiero contactarme" secondary />
+        <a href="#contact">
+          <Button label="Quiero contactarme" secondary />
+        </a>
         <span className="gap-2 items-center md:flex hidden">
           <span className="relative flex size-3">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-300/50 blur-xs"></span>
