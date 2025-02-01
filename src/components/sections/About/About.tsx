@@ -14,7 +14,7 @@ export default function About() {
           />
         </div>
         <span className="text-gray-300 mb-4 md:text-left text-center">
-          <h3 className="text-5xl font-bold font-header text-gray-400">
+          <h3 className="lg:text-4xl text-3xl font-bold font-header text-gray-400">
             Franco Martino
           </h3>
           <h3 className="text-2xl">Desarrollador de software</h3>
