@@ -9,7 +9,7 @@ import AnimatedBackground from "./components/common/AnimatedBackground";
 
 export default function App() {
   return (
-    <div className="relative w-full min-h-lvh text-white bg-gray-900 -z-30">
+    <div className="relative w-full min-h-lvh text-white">
       <AnimatedBackground />
       <div className="max-w-7xl mx-auto flex flex-col w-full sm:px-16 px-8">
         <Presentation />
