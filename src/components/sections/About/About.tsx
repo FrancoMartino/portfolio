@@ -9,7 +9,7 @@ export default function About() {
       <div className="flex md:flex-row flex-col gap-x-8 gap-y-4 items-center">
         <div className="flex flex-col items-center text-center gap-2">
           <img
-            src="img/profile.png"
+            src="img/profile.webp"
             alt="Franco Martino"
             className="relative rounded-full sm:min-w-48 max-w-64"
           />
