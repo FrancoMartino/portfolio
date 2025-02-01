@@ -35,6 +35,13 @@ export default function Contact() {
   const [email, setEmail] = useState<string>("");
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false); // Estado para controlar la animación
   const submitButton = useRef<HTMLButtonElement>(null);
+  let ip = "Desconocido";
+
+  fetch("https://api.ipify.org?format=json")
+    .then((response) => response.json())
+    .then((data) => {
+      ip = data.ip;
+    });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -50,6 +57,7 @@ export default function Contact() {
       Mensaje: message,
       Correo: email,
       Sistema_Operativo: getOS(),
+      IP: ip,
     };
 
     try {
