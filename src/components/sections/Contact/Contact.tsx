@@ -19,6 +19,25 @@ function ErrorToast({ isPaused }: ToastContentProps) {
   );
 }
 
+async function getPublicIP() {
+  try {
+    const response = await fetch("https://api64.ipify.org?format=json");
+    const data = await response.json();
+    return data.ip;
+  } catch (error) {
+    return "";
+  }
+}
+function getOS() {
+  const userAgent = navigator.userAgent;
+  if (userAgent.includes("Win")) return "Windows";
+  if (userAgent.includes("Mac")) return "MacOS";
+  if (userAgent.includes("Linux")) return "Linux";
+  if (userAgent.includes("Android")) return "Android";
+  if (userAgent.includes("like Mac")) return "iOS";
+  return "Desconocido";
+}
+
 export default function Contact() {
   const [name, setName] = useState<string>("");
   const [message, setMessage] = useState<string>("");
@@ -37,6 +56,8 @@ export default function Contact() {
       Nombre: name,
       Mensaje: message,
       Correo: email,
+      Sistema_Operativo: getOS(),
+      IP: getPublicIP(),
     };
 
     try {
