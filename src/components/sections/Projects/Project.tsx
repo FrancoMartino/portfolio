@@ -9,7 +9,6 @@ import { BiSolidLock } from "react-icons/bi";
 interface Interface {
   title: string;
   description: string;
-  licence: string;
   link?: string;
   image: string;
   openSource?: boolean;

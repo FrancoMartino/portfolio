@@ -134,7 +134,6 @@ export const EDUCATION = [
 export const PROJECTS = [
   {
     title: "Portfolio",
-    licence: "Público",
     year: 2025,
     description:
       "Portfolio interactivo desarrollado con React, TailwindCSS y TypeScript. Presenta mis proyectos y habilidades con un diseño limpio y funcional.",
@@ -145,7 +144,6 @@ export const PROJECTS = [
   },
   {
     title: "Massive CF",
-    licence: "Privado",
     year: 2025,
     description:
       "Extensión para navegadores con la función administrar listas de mejores amigos en Instagram. La API oficial no permite hacerlo en masa, pero Massive CF lo hace fácil y rápido, ideal para creadores y cuentas comerciales.",
@@ -154,7 +152,6 @@ export const PROJECTS = [
   },
   {
     title: "Cod-ES",
-    licence: "Open-Source",
     year: 2024,
     description:
       "Librería Open-Source que permite programar en Arduino con sintaxis en español, facilitando el aprendizaje sin perder compatibilidad.",
@@ -165,11 +162,18 @@ export const PROJECTS = [
   },
   {
     title: "CENDOJ Extractor",
-    licence: "Privado",
     year: 2024,
     description:
       "Extensión para navegadores que automatiza la extracción de URLs de documentos PDF desde el portal del CENDOJ de España. Diseñada para optimizar la recopilación de enlaces, simplificando el proceso de descarga y análisis de sentencias judiciales.",
     image: "img/projects/cendoj.webp",
+    techs: ["javascript", "html", "css"],
+  },
+  {
+    title: "SearchMore Browser",
+    year: 2024,
+    description:
+      "Extensión para navegadores que modifica el sistema de busqueda predeterminado, por SearchMore",
+    image: "img/projects/searchmore.webp",
     techs: ["javascript", "html", "css"],
   },
 ];

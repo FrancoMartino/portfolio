@@ -21,8 +21,12 @@ export default function Presentation() {
           }}
         />
         <Button label="Quiero contactarme" secondary />
+        <span className="flex gap-2 items-center">
+          <div className="w-2 h-2 rounded-full bg-green-300" />
+          En linea
+        </span>
       </div>
-      <Skills className="mt-4 md:flex hidden !justify-start" techs top/>
+      <Skills className="mt-4 md:flex hidden !justify-start" techs top />
       <div className="flex flex-row justify-center p-8 justify-center items-center w-full md:relative absolute bottom-0 left-1/2 transform -translate-x-1/2 select-none">
         <a
           href="#about"
