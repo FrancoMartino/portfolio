@@ -27,7 +27,7 @@ const Navbar: React.FC = () => (
     <Contact
       size={28}
       icon={BiSolidEnvelope}
-      href="mailto:martinofrancoezequiel@gmail.com"
+      href="mailto:info@martinofranco.com"
     />
   </div>
 );
