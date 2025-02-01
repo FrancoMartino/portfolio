@@ -1,11 +1,11 @@
 export default function AnimatedBackground() {
   return (
-    <div className="fixed inset-0 overflow-hidden -z-10 bg-gray-900">
+    <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10 bg-gray-900">
       {[...Array(5)].map((_, i) => (
         <span
           key={i}
           className={
-            "absolute rounded-full animate-[spin_45s_linear_infinite] " +
+            "absolute rounded-full animate-[spin_45s_linear_infinite] pointer-events-none " +
             [
               "bg-green-300",
               "bg-green-300",
@@ -14,9 +14,13 @@ export default function AnimatedBackground() {
               "bg-gray-400",
             ][i] +
             " blur-3xl " +
-            ["opacity-5", "opacity-[.03]", "opacity-5", "opacity-[.03]", "opacity-5"][
-              i
-            ]
+            [
+              "opacity-5",
+              "opacity-[.03]",
+              "opacity-5",
+              "opacity-[.03]",
+              "opacity-5",
+            ][i]
           }
           style={{
             top: ["27%", "17%", "77%", "4%", "58%"][i],
