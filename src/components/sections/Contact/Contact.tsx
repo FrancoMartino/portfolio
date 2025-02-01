@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { BiSolidSend } from "react-icons/bi";
 import Section from "../Section/Section";
-import { ToastContainer, toast, ToastContentProps } from "react-toastify";
+import { ToastContainer, toast, ToastContentProps, Zoom } from "react-toastify";
 
 function SuccessToast({ isPaused }: ToastContentProps) {
   return (
     <div className="select-none">
-      <span>{"Gracias por contactarme :)"}</span>
+      <span>{"Formulario enviado."}</span>
     </div>
   );
 }
@@ -64,14 +64,14 @@ export default function Contact() {
     toast(SuccessToast, {
       autoClose: 2000,
       className:
-        "bg-green-300 overflow-visible scale-100 ring-1 ring-black/5 rounded-xl flex items-center gap-4 font-semibold text-gray-900 text-lg !font-sans rounded-2xl",
+        "bg-green-300 overflow-visible scale-100 rounded-2xl flex items-center text-gray-900 !font-sans",
     });
 
   const errorToast = () =>
     toast(ErrorToast, {
       autoClose: 2000,
       className:
-        "bg-red-300 overflow-visible scale-100 ring-1 ring-black/5 rounded-xl flex items-center gap-4 font-semibold text-gray-900 text-lg !font-sans rounded-2xl",
+        "bg-red-300 overflow-visible scale-100 rounded-2xl flex items-center text-gray-900 !font-sans",
     });
 
   return (
@@ -79,7 +79,12 @@ export default function Contact() {
       id="contact"
       className="flex flex-col w-full items-center justify-center"
     >
-      <ToastContainer hideProgressBar closeButton={false} />
+      <ToastContainer
+        position="top-center"
+        transition={Zoom}
+        hideProgressBar
+        closeButton={false}
+      />
       <h3 className="text-xl font-bold text-center font-header text-gray-400 mb-4">
         Contacto
       </h3>
