@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { BiSolidSend } from "react-icons/bi";
 import Section from "../Section/Section";
 import { ToastContainer, toast, ToastContentProps, Zoom } from "react-toastify";
@@ -23,9 +23,13 @@ export default function Contact() {
   const [name, setName] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [email, setEmail] = useState<string>("");
+  const submitButton = useRef<HTMLButtonElement>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (submitButton.current) {
+      submitButton.current.disabled = true;
+    }
 
     const data = {
       _template: "box",
@@ -55,9 +59,15 @@ export default function Contact() {
       setMessage("");
       setEmail("");
       successToast();
+      if (submitButton.current) {
+        submitButton.current.disabled = false;
+      }
     } catch (error) {
       console.error("Error:", error);
       errorToast();
+      if (submitButton.current) {
+        submitButton.current.disabled = false;
+      }
     }
   };
 
@@ -130,7 +140,8 @@ export default function Contact() {
         </div>
         <div className="flex justify-end">
           <button
-            className="relative inline-flex w-min items-center select-none gap-2 p-4 px-6 rounded-full transition-colors duration-300 bg-green-300 text-gray-800 hover:bg-gray-800 hover:text-white"
+            ref={submitButton}
+            className="relative inline-flex w-min items-center select-none gap-2 p-4 px-6 rounded-full transition-colors duration-300 bg-green-300 text-gray-800 hover:bg-gray-800 hover:text-white disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed"
             type="submit"
           >
             <span className="font-medium whitespace-nowrap">Enviar</span>
