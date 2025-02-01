@@ -111,40 +111,6 @@ export const TYPEWRITTER_HEADER = [
   { subtitle: "Actualmente soy", title: "Técnico Electrónico." },
 ];
 
-export const PROJECTS = [
-  {
-    title: "Portfolio",
-    licence: "Público",
-    year: 2025,
-    description:
-      "Portfolio interactivo desarrollado con React, TailwindCSS y TypeScript. Presenta mis proyectos y habilidades con un diseño limpio y funcional.",
-    image: "img/projects/portfolio.png",
-    link: "/",
-    openSource: true,
-    techs: ["react", "tailwindcss", "html", "typescript"],
-  },
-  {
-    title: "Massive CF",
-    licence: "Privado",
-    year: 2025,
-    description:
-      "Extensión para administrar listas de mejores amigos en Instagram. La API oficial no permite hacerlo en masa, pero Massive CF lo hace fácil y rápido, ideal para creadores y cuentas comerciales.",
-    image: "img/projects/massivecf.png",
-    techs: ["javascript", "html", "css"],
-  },
-  {
-    title: "Cod-ES",
-    licence: "Open-Source",
-    year: 2024,
-    description:
-      "Librería Open-Source que permite programar en Arduino con sintaxis en español, facilitando el aprendizaje sin perder compatibilidad.",
-    image: "img/projects/codes.png",
-    link: "https://github.com/FrancoMartino/Cod-ES",
-    openSource: true,
-    techs: ["cpp", "arduino"],
-  },
-];
-
 export const EDUCATION = [
   {
     title: "Técnicatura en Electrónica",
@@ -162,5 +128,48 @@ export const EDUCATION = [
     title: "Ingeniería en Informática",
     institution: "UNDAV",
     startYear: 2025,
+  },
+];
+
+export const PROJECTS = [
+  {
+    title: "Portfolio",
+    licence: "Público",
+    year: 2025,
+    description:
+      "Portfolio interactivo desarrollado con React, TailwindCSS y TypeScript. Presenta mis proyectos y habilidades con un diseño limpio y funcional.",
+    image: "img/projects/portfolio.webp",
+    link: "/",
+    openSource: true,
+    techs: ["react", "tailwindcss", "html", "typescript"],
+  },
+  {
+    title: "Massive CF",
+    licence: "Privado",
+    year: 2025,
+    description:
+      "Extensión para navegadores con la función administrar listas de mejores amigos en Instagram. La API oficial no permite hacerlo en masa, pero Massive CF lo hace fácil y rápido, ideal para creadores y cuentas comerciales.",
+    image: "img/projects/massivecf.webp",
+    techs: ["javascript", "html", "css"],
+  },
+  {
+    title: "Cod-ES",
+    licence: "Open-Source",
+    year: 2024,
+    description:
+      "Librería Open-Source que permite programar en Arduino con sintaxis en español, facilitando el aprendizaje sin perder compatibilidad.",
+    image: "img/projects/codes.webp",
+    link: "https://github.com/FrancoMartino/Cod-ES",
+    openSource: true,
+    techs: ["cpp", "arduino"],
+  },
+  {
+    title: "CENDOJ Extractor",
+    licence: "Privado",
+    year: 2024,
+    description:
+      "Extensión para navegadores que automatiza la extracción de URLs de documentos PDF desde el portal del CENDOJ de España. Diseñada para optimizar la recopilación de enlaces, simplificando el proceso de descarga y análisis de sentencias judiciales.",
+    image: "img/projects/cendoj.webp",
+    techs: ["javascript", "html", "css"],
   },
 ];

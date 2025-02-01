@@ -13,7 +13,7 @@ export default function App() {
         <main className="flex flex-col gap-8">
           <About />
           <div className="flex lg:flex-row-reverse flex-col gap-8">
-            <div className="lg:w-1/3 w-auto flex flex-col justify-between gap-8">
+            <div className="lg:w-1/3 w-auto flex flex-col gap-8">
               <AllSkills />
               <Education />
             </div>
