@@ -29,6 +29,7 @@ export default function Contact() {
 
     const data = {
       _template: "box",
+      _subject: "MENSAJE ENVIADO DESDE EL PORTFOLIO | martinofranco.com",
       name: name,
       message: message,
       email: email,
