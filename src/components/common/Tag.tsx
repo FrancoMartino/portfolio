@@ -19,7 +19,11 @@ export default function Tag(attributes: Interface) {
     >
       <div className="relative flex items-center gap-2">
         {attributes.icon && (
-          <img alt={attributes.title} src={attributes.icon} className="max-w-6 md:max-w-4 max-h-6 md:max-h-4" />
+          <img
+            alt={attributes.title}
+            src={attributes.icon}
+            className="max-w-6 md:max-w-4 max-h-6 md:max-h-4"
+          />
         )}
         <span className="whitespace-nowrap">{attributes.title}</span>
       </div>
