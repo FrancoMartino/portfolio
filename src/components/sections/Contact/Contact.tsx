@@ -29,10 +29,10 @@ export default function Contact() {
 
     const data = {
       _template: "box",
-      _subject: "MENSAJE ENVIADO DESDE EL PORTFOLIO | martinofranco.com",
-      name: name,
-      message: message,
-      email: email,
+      _subject: "martinofranco.com | " + { name } + " te ha enviado un mensaje",
+      Nombre: name,
+      Mensaje: message,
+      Correo: email,
     };
 
     try {
