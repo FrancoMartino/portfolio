@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { BiSolidSend } from "react-icons/bi";
 import Section from "../Section/Section";
+import { ToastContainer, toast } from 'react-toastify';
 
-export default function Form() {
+export default function Contact() {
   const [name, setName] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -19,7 +20,8 @@ export default function Form() {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/ajax/b298594f92fafa5c26babc6fa18ca8ff",
+        //"https://formsubmit.co/ajax/b298594f92fafa5c26babc6fa18ca8ff",
+        "https://formsubmit.co/ajax/francool190@gmail.com",
         {
           method: "POST",
           headers: {
@@ -32,17 +34,23 @@ export default function Form() {
 
       const result = await response.json();
       console.log(result);
+
+      setName("")
+      setMessage("")
+      setEmail("")
     } catch (error) {
       console.error("Error:", error);
+      toast('Wow so easy !');
     }
   };
 
   return (
-    <Section id="contact" className="w-full">
+    <Section id="contact" className="flex flex-col w-full items-center justify-center">
+      <ToastContainer />
       <h3 className="text-xl font-bold text-center font-header text-gray-400 mb-4">
         Contacto
       </h3>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full max-w-xl">
         <div className="flex flex-col gap-2">
           <label htmlFor="name">Nombre completo</label>
           <input

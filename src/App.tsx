@@ -4,13 +4,12 @@ import About from "./components/sections/About/About";
 import Projects from "./components/sections/Projects/Projects";
 import AllSkills from "./components/sections/Skills/Skills";
 import Education from "./components/sections/Education/Education";
-import Form from "./components/sections/Form/Form";
+import Contact from "./components/sections/Contact/Contact";
 
 export default function App() {
   return (
     <div className="w-full min-h-lvh text-white bg-gray-900">
-      
-      <main className="max-w-7xl mx-auto flex flex-col w-full sm:px-16 px-8">
+      <div className="max-w-7xl mx-auto flex flex-col w-full sm:px-16 px-8">
         <Presentation />
         <main className="flex flex-col gap-8">
           <About />
@@ -21,12 +20,12 @@ export default function App() {
             </div>
             <div className="lg:w-2/3 w-auto flex flex-col gap-8">
               <Projects />
-              <Form/>
             </div>
           </div>
+          <Contact />
         </main>
         <Footer />
-      </main>
+      </div>
     </div>
   );
 }
