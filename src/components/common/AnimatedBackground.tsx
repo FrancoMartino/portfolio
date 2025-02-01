@@ -13,7 +13,10 @@ export default function AnimatedBackground() {
               "bg-gray-400",
               "bg-gray-400",
             ][i] +
-            " opacity-5 blur-3xl"
+            " blur-3xl " +
+            ["opacity-5", "opacity-10", "opacity-5", "opacity-10", "opacity-5"][
+              i
+            ]
           }
           style={{
             top: ["27%", "17%", "77%", "4%", "58%"][i],
