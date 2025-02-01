@@ -11,7 +11,7 @@ export default function Projects() {
       <div className="flex flex-col gap-4">
         {PROJECTS.map((project, index) => (
           <Project
-            icon={project.icon} // Es importante proporcionar una clave única para cada elemento
+            openSource={project.openSource}
             title={project.title}
             year={project.year}
             techs={project.techs}

@@ -3,6 +3,8 @@ import { TECHS } from "../../../config/constants";
 import Tag from "../../common/Tag";
 import Card from "../../common/Card";
 import React from "react";
+import { SiGithub } from "react-icons/si";
+import { BiSolidLock } from "react-icons/bi";
 
 interface Interface {
   title: string;
@@ -10,7 +12,7 @@ interface Interface {
   licence: string;
   link?: string;
   image: string;
-  icon?: IconType;
+  openSource?: boolean;
   techs: string[];
   year: number;
 }
@@ -31,21 +33,18 @@ export default function Project(attributes: Interface) {
           />
           <p className="text-gray-300 w-full flex flex-col gap-4 md:w-3/4">
             <span className="text-lg font-semibold text-gray-400 flex gap-2 items-center group">
-              {attributes.icon &&
-                React.createElement(attributes.icon, {
-                  className: "text-white",
-                  size: 18,
-                })}
+              {attributes.openSource ? (
+                <SiGithub className="text-white" size={18} />
+              ) : (
+                <BiSolidLock className="text-white" size={18} />
+              )}
               <span
                 className={
-                  "text-white " + (attributes.link && "group-hover:underline")
+                  "text-white whitespace-nowrap " +
+                  (attributes.link && "group-hover:underline")
                 }
               >
                 {attributes.title}
-              </span>
-              •
-              <span className="text-gray-400 font-medium text-md">
-                {attributes.licence}
               </span>
               •
               <span className="text-gray-400 font-medium text-md">

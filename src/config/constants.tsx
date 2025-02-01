@@ -120,7 +120,7 @@ export const PROJECTS = [
       "Portfolio interactivo desarrollado con React, TailwindCSS y TypeScript. Presenta mis proyectos y habilidades con un diseño limpio y funcional.",
     image: "img/projects/portfolio.png",
     link: "/",
-    icon: BiGlobe,
+    openSource: true,
     techs: ["react", "tailwindcss", "html", "typescript"],
   },
   {
@@ -130,7 +130,6 @@ export const PROJECTS = [
     description:
       "Extensión para administrar listas de mejores amigos en Instagram. La API oficial no permite hacerlo en masa, pero Massive CF lo hace fácil y rápido, ideal para creadores y cuentas comerciales.",
     image: "img/projects/massivecf.png",
-    icon: SiChromewebstore,
     techs: ["javascript", "html", "css"],
   },
   {
@@ -141,7 +140,7 @@ export const PROJECTS = [
       "Librería Open-Source que permite programar en Arduino con sintaxis en español, facilitando el aprendizaje sin perder compatibilidad.",
     image: "img/projects/codes.png",
     link: "https://github.com/FrancoMartino/Cod-ES",
-    icon: SiGithub,
+    openSource: true,
     techs: ["cpp", "arduino"],
   },
 ];
