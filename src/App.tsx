@@ -5,10 +5,12 @@ import Projects from "./components/sections/Projects/Projects";
 import AllSkills from "./components/sections/Skills/Skills";
 import Education from "./components/sections/Education/Education";
 import Contact from "./components/sections/Contact/Contact";
+import AnimatedBackground from "./components/common/AnimatedBackground";
 
 export default function App() {
   return (
-    <div className="w-full min-h-lvh text-white bg-gray-900">
+    <div className="w-full min-h-lvh text-white">
+      <AnimatedBackground />
       <div className="max-w-7xl mx-auto flex flex-col w-full sm:px-16 px-8">
         <Presentation />
         <main className="flex flex-col gap-8">
