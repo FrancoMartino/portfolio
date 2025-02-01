@@ -19,15 +19,6 @@ function ErrorToast({ isPaused }: ToastContentProps) {
   );
 }
 
-async function getPublicIP() {
-  try {
-    const response = await fetch("https://api64.ipify.org?format=json");
-    const data = await response.json();
-    return data.ip;
-  } catch (error) {
-    return "";
-  }
-}
 function getOS() {
   const userAgent = navigator.userAgent;
   if (userAgent.includes("Win")) return "Windows";
@@ -57,7 +48,6 @@ export default function Contact() {
       Mensaje: message,
       Correo: email,
       Sistema_Operativo: getOS(),
-      IP: getPublicIP(),
     };
 
     try {
