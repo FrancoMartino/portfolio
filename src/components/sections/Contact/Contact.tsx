@@ -33,10 +33,12 @@ export default function Contact() {
   const [name, setName] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [email, setEmail] = useState<string>("");
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false); // Estado para controlar la animación
   const submitButton = useRef<HTMLButtonElement>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true); // Activar animación de rotación
     if (submitButton.current) {
       submitButton.current.disabled = true;
     }
@@ -79,6 +81,8 @@ export default function Contact() {
       if (submitButton.current) {
         submitButton.current.disabled = false;
       }
+    } finally {
+      setIsSubmitting(false); // Desactivar animación de rotación después de enviar
     }
   };
 
@@ -156,7 +160,12 @@ export default function Contact() {
             type="submit"
           >
             <span className="font-medium whitespace-nowrap">Enviar</span>
-            <BiSolidSend size={24} />
+            <BiSolidSend
+              size={24}
+              className={`transition-transform duration-500 ${
+                isSubmitting ? "animate-spin" : ""
+              }`}
+            />
           </button>
         </div>
       </form>

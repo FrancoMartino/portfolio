@@ -5,7 +5,7 @@ export default function AnimatedBackground() {
         <span
           key={i}
           className={
-            "absolute rounded-full animate-[spin_45s_linear_infinite] pointer-events-none " +
+            "absolute rounded-full animate-[spin_45s_linear_infinite] pointer-events-none blur-3xl " +
             [
               "bg-green-300",
               "bg-green-300",
@@ -13,7 +13,7 @@ export default function AnimatedBackground() {
               "bg-gray-400",
               "bg-gray-400",
             ][i] +
-            " blur-3xl " +
+            " " +
             [
               "opacity-5",
               "opacity-[.03]",
@@ -23,19 +23,19 @@ export default function AnimatedBackground() {
             ][i]
           }
           style={{
-            top: ["27%", "17%", "77%", "4%", "58%"][i],
-            left: ["81%", "23%", "60%", "48%", "84%"][i],
-            animationDuration: ["38s", "14s", "18s", "26s", "29s"][i],
-            animationDelay: ["-3s", "-17s", "-13s", "-12s", "-6s"][i],
+            top: ["22%", "12%", "72%", "10%", "50%"][i],
+            left: ["75%", "20%", "58%", "46%", "83%"][i],
+            animationDuration: ["30s", "18s", "22s", "28s", "24s"][i],
+            animationDelay: ["-5s", "-13s", "-10s", "-7s", "-2s"][i],
             transformOrigin: [
-              "-13vw 18vh",
-              "-8vw 15vh",
-              "-18vw -14vh",
-              "-12vw -22vh",
-              "19vw 13vh",
+              "-15vw 22vh",
+              "-10vw 12vh",
+              "-20vw -10vh",
+              "-10vw -18vh",
+              "20vw 10vh",
             ][i],
-            width: ["40vmin", "55vmin", "35vmin", "60vmin", "45vmin"][i],
-            height: ["40vmin", "55vmin", "35vmin", "60vmin", "45vmin"][i],
+            width: ["45vmin", "50vmin", "40vmin", "55vmin", "50vmin"][i],
+            height: ["45vmin", "50vmin", "40vmin", "55vmin", "50vmin"][i],
           }}
         ></span>
       ))}
