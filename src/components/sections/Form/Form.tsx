@@ -19,7 +19,7 @@ export default function Form() {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/ajax/martinofrancoezequiel@gmail.com",
+        "https://formsubmit.co/ajax/b298594f92fafa5c26babc6fa18ca8ff",
         {
           method: "POST",
           headers: {
