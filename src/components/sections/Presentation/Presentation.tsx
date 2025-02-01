@@ -21,7 +21,7 @@ export default function Presentation() {
           }}
         />
         <Button label="Quiero contactarme" secondary />
-        <span className="flex gap-2 items-center">
+        <span className="gap-2 items-center md:flex hidden">
           <div className="w-2 h-2 rounded-full bg-green-300" />
           En linea
         </span>
