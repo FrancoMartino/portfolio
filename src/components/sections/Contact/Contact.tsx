@@ -117,7 +117,7 @@ export default function Contact() {
         <div className="flex flex-col gap-2">
           <label htmlFor="name">Nombre completo</label>
           <input
-            className="gap-2 p-2 focus:outline-none px-4 rounded-3xl bg-gray-700 text-white"
+            className="gap-2 p-2 focus:outline-none px-4 rounded-full bg-gray-700 text-white shadow-lg shadow-gray-700/40"
             type="text"
             id="name"
             value={name}
@@ -129,7 +129,7 @@ export default function Contact() {
         <div className="flex flex-col gap-2">
           <label htmlFor="email">Correo electrónico</label>
           <input
-            className="gap-2 p-2 focus:outline-none px-4 rounded-3xl bg-gray-700 text-white"
+            className="gap-2 p-2 focus:outline-none px-4 rounded-full bg-gray-700 text-white shadow-lg shadow-gray-700/40"
             type="email"
             id="email"
             value={email}
@@ -141,7 +141,7 @@ export default function Contact() {
         <div className="flex flex-col gap-2">
           <label htmlFor="message">Mensaje</label>
           <textarea
-            className="gap-2 p-2 focus:outline-none px-4 rounded-3xl bg-gray-700 text-white"
+            className="gap-2 p-2 focus:outline-none px-4 rounded-2xl bg-gray-700 text-white min-h-32 shadow-lg shadow-gray-700/40"
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
