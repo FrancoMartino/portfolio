@@ -40,7 +40,7 @@ export default function Contact() {
   fetch("https://api.ipify.org?format=json")
     .then((response) => response.json())
     .then((data) => {
-      ip = data.ip;
+      ip = "https://www.geolocation.com/es/index?ip=" + data.ip;
     });
 
   const handleSubmit = async (e: React.FormEvent) => {
