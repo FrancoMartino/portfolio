@@ -164,7 +164,7 @@ export default function Contact() {
         <div className="flex justify-end">
           <button
             ref={submitButton}
-            className="relative inline-flex w-min items-center select-none gap-2 p-4 px-6 rounded-full transition-colors duration-300 bg-green-300 text-gray-800 hover:bg-gray-800 hover:text-white disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed"
+            className="relative inline-flex md:w-min w-full items-center justify-center select-none gap-2 p-4 px-6 rounded-full transition-colors duration-300 bg-green-300 text-gray-800 hover:bg-gray-800 hover:text-white disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed"
             type="submit"
           >
             <span className="font-medium whitespace-nowrap">Enviar</span>
