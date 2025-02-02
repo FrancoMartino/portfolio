@@ -6,13 +6,13 @@ import Navbar from "./Navbar";
 
 export default function Presentation() {
   return (
-    <div className="relative min-h-lvh flex flex-col justify-center w-full">
+    <div className="min-h-lvh flex flex-col justify-center w-full">
       <Navbar />
       <TypewritterHeader />
       <h3 className="text-3xl font-bold font-header text-gray-400 select-none">
         Soluciono problemas, desarrollando soluciones.
       </h3>
-      <div className="flex gap-4 sm:flex-row flex-col mt-4">
+      <div className="relative flex gap-4 sm:flex-row flex-col mt-4">
         <Button
           label="Descargar CV"
           icon={BiDownload}
