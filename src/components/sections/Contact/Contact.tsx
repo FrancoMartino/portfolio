@@ -33,7 +33,7 @@ export default function Contact() {
   const [name, setName] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [email, setEmail] = useState<string>("");
-  const [isSubmitting, setIsSubmitting] = useState<boolean>(false); // Estado para controlar la animación
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const submitButton = useRef<HTMLButtonElement>(null);
   let ip = "Desconocido";
 
@@ -45,7 +45,7 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true); // Activar animación de rotación
+    setIsSubmitting(true);
     if (submitButton.current) {
       submitButton.current.disabled = true;
     }
@@ -90,7 +90,7 @@ export default function Contact() {
         submitButton.current.disabled = false;
       }
     } finally {
-      setIsSubmitting(false); // Desactivar animación de rotación después de enviar
+      setIsSubmitting(false);
     }
   };
 
