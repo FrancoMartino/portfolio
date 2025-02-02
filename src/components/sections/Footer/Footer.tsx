@@ -1,6 +1,6 @@
-import Contact from "../../common/Contact";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { BiSolidEnvelope } from "react-icons/bi";
+import SocialMedia from "../../common/SocialMedia";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -10,18 +10,7 @@ export default function Footer() {
       className="flex w-full md:flex-row flex-col-reverse items-center text-gray-400 justify-center gap-4 p-8 md:pt-16"
     >
       <span className="text-sm">Franco Martino - {year}</span>
-      <div className="flex gap-4 items-center">
-        <Contact icon={SiGithub} href="https://github.com/FrancoMartino/" />
-        <Contact
-          icon={SiLinkedin}
-          href="https://www.linkedin.com/in/francomartino/"
-        />
-        <Contact
-          size={28}
-          icon={BiSolidEnvelope}
-          href="mailto:info@martinofranco.com"
-        />
-      </div>
+      <SocialMedia/>
     </div>
   );
 }
