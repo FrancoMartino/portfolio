@@ -20,7 +20,8 @@ export default function About() {
           </h3>
           <h3 className="text-2xl">Desarrollador de software</h3>
           <p className="text-lg">
-            Soy Argentino, tengo {calculateYearsPassed("2006-11-04")} años, y una gran pasión por el desarrollo.
+            Soy Argentino, tengo {calculateYearsPassed("2006-11-04")} años, y
+            una gran pasión por el desarrollo.
           </p>
           <Skills soft className="mt-4 md:!justify-start justify-center" />
         </span>
