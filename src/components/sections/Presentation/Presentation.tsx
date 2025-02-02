@@ -12,7 +12,7 @@ export default function Presentation() {
       <h3 className="text-3xl font-bold font-header text-gray-400 select-none">
         Soluciono problemas, desarrollando soluciones.
       </h3>
-      <div className="relative flex gap-4 sm:flex-row flex-col mt-4">
+      <div className="flex gap-4 sm:flex-row flex-col mt-4">
         <Button
           label="Descargar CV"
           icon={BiDownload}
@@ -32,15 +32,15 @@ export default function Presentation() {
         </span>
       </div>
       <Skills className="mt-4 md:flex hidden !justify-start" techs top />
-      <div className="flex flex-row justify-center p-8 justify-center items-center w-full md:relative absolute bottom-0 left-1/2 transform -translate-x-1/2 select-none">
-        <a
-          href="#about"
-          className="flex flex-row gap-2 text-gray-300 hover:text-white"
-        >
-          Ver mas
-          <BiSolidDownArrowAlt size={24} />
-        </a>
-      </div>
+        <div className="absolute md:h-auto md:flex inset-x-0 h-lvh md:relative w-full select-none items-center justify-center">
+          <a
+            href="#about"
+            className="flex flex-row gap-2 text-gray-300 hover:text-white whitespace-nowrap w-full absolute md:relative p-8 md:p-0 md:my-8 md:bottom-auto bottom-0 justify-center"
+          >
+            Ver mas
+            <BiSolidDownArrowAlt size={24} />
+          </a>
+        </div>
     </div>
   );
 }
