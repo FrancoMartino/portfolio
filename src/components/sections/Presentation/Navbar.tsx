@@ -18,7 +18,7 @@ const NavbarLink: React.FC<NavbarLinkProps> = ({ href, children }) => (
 );
 
 const Navbar: React.FC = () => (
-  <div className="gap-4 lg:flex absolute inset-0 p-8 hidden text-gray-300 justify-end">
+  <div className="gap-4 lg:flex lg:absolute h-min inset-0 p-8 hidden text-gray-300 justify-end">
     <Contact icon={SiGithub} href="https://github.com/FrancoMartino/" />
     <Contact
       icon={SiLinkedin}

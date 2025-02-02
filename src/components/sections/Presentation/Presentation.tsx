@@ -2,12 +2,10 @@ import { BiSolidDownArrowAlt, BiDownload } from "react-icons/bi";
 import TypewritterHeader from "./TypewritterHeader";
 import Button from "../../common/Button";
 import Skills from "../../common/Skills";
-import Navbar from "./Navbar";
 
 export default function Presentation() {
   return (
-    <div className="min-h-lvh flex flex-col justify-center w-full">
-      <Navbar />
+    <div className="relative min-h-lvh flex flex-col justify-center w-full">
       <TypewritterHeader />
       <h3 className="text-3xl font-bold font-header text-gray-400 select-none">
         Soluciono problemas, desarrollando soluciones.

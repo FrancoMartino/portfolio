@@ -6,12 +6,14 @@ import AllSkills from "./components/sections/Skills/Skills";
 import Education from "./components/sections/Education/Education";
 import Contact from "./components/sections/Contact/Contact";
 import AnimatedBackground from "./components/common/AnimatedBackground";
+import Navbar from "./components/sections/Presentation/Navbar";
 
 export default function App() {
   return (
     <div className="relative w-full min-h-lvh text-white">
       <AnimatedBackground />
-      <div className="max-w-7xl mx-auto flex flex-col w-full sm:px-16 px-8">
+      <Navbar />
+      <div className="relative max-w-7xl mx-auto flex flex-col w-full sm:px-16 px-8">
         <Presentation />
         <main className="flex flex-col gap-8">
           <About />
