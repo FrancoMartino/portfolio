@@ -1,7 +1,5 @@
 import React from "react";
 import Contact from "../../common/SocialMedia";
-import { SiGithub, SiLinkedin } from "react-icons/si";
-import { BiSolidEnvelope } from "react-icons/bi";
 
 interface NavbarLinkProps {
   href: string;

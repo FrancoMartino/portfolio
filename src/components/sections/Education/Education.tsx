@@ -1,5 +1,4 @@
 import Section from "../Section/Section";
-import Project from "./Certification";
 import { EDUCATIONS, COURSES } from "../../../config/constants";
 import Certification from "./Certification";
 

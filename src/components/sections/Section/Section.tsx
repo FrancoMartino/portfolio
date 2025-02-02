@@ -1,5 +1,3 @@
-import { IconType } from "react-icons";
-
 interface Interface {
   id: string;
   className?: string;

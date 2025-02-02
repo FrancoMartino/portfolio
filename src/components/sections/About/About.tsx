@@ -1,5 +1,4 @@
 import Section from "../Section/Section";
-
 import Skills from "../../common/Skills";
 import { calculateYearsPassed } from "../../utils/date";
 

@@ -1,4 +1,3 @@
-import { IconType } from "react-icons";
 import { TECHS } from "../../../config/constants";
 import Tag from "../../common/Tag";
 import Card from "../../common/Card";

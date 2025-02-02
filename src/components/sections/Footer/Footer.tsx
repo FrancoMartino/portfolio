@@ -1,5 +1,3 @@
-import { SiGithub, SiLinkedin } from "react-icons/si";
-import { BiSolidEnvelope } from "react-icons/bi";
 import SocialMedia from "../../common/SocialMedia";
 
 export default function Footer() {
@@ -10,7 +8,7 @@ export default function Footer() {
       className="flex w-full md:flex-row flex-col-reverse items-center text-gray-400 justify-center gap-4 p-8 md:pt-16"
     >
       <span className="text-sm">Franco Martino - {year}</span>
-      <SocialMedia/>
+      <SocialMedia />
     </div>
   );
 }
