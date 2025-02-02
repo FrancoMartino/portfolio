@@ -33,7 +33,7 @@ export default function Presentation() {
       <div className="absolute md:h-auto md:flex inset-x-0 h-lvh md:relative w-full select-none items-center justify-center pointer-events-none">
         <a
           href="#about"
-          className="flex flex-row gap-2 text-gray-300 hover:text-white whitespace-nowrap w-full absolute md:relative p-8 md:p-0 md:my-8 md:bottom-auto bottom-0 justify-center"
+          className="flex flex-row gap-2 text-gray-300 hover:text-white whitespace-nowrap w-full absolute md:relative p-8 md:p-0 md:my-8 md:bottom-auto bottom-0 justify-center pointer-events-auto"
         >
           Ver mas
           <BiSolidDownArrowAlt size={24} />
