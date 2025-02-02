@@ -213,14 +213,4 @@ export const PROJECTS = [
     image: "img/projects/searchmore.webp",
     techs: ["javascript", "html", "css"],
   },
-  {
-    title: "3D Printing Price Calculator",
-    year: 2024,
-    description:
-      "Una calculadora de precios para impresión 3D que te ayuda a estimar el costo de tus proyectos. Permite calcular el costo basado en el material, tiempo de impresión, costos adicionales y más.",
-    image: "img/projects/3dcalc.webp",
-    link: "https://francomartino.github.io/3d-printing-price-calculator/",
-    openSource: true,
-    techs: ["javascript", "html", "tailwindcss"],
-  },
 ];
