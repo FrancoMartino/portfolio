@@ -26,6 +26,7 @@ export default function Education() {
       <div className="flex flex-col gap-4">
         {COURSES.map((ed, index) => (
           <Certification
+            key={index}
             title={ed.title}
             institution={ed.institution}
             startYear={ed.startYear}

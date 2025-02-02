@@ -11,6 +11,7 @@ export default function Projects() {
       <div className="flex flex-col gap-4">
         {PROJECTS.map((project, index) => (
           <Project
+            key={index}
             openSource={project.openSource}
             title={project.title}
             year={project.year}
