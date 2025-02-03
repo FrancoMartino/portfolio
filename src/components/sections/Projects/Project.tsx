@@ -59,7 +59,7 @@ export default function Project(attributes: Interface) {
                   tech && (
                     <Tag
                       key={index}
-                      className="!p-0 !bg-transparent"
+                      className="!p-0 !bg-transparent !shadow-none"
                       title={tech.title}
                       icon={tech.icon}
                     />
