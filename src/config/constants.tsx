@@ -203,7 +203,7 @@ export const PROJECTS = [
     description:
       "Extensión para navegadores que automatiza la extracción de URLs de documentos PDF desde el portal del CENDOJ de España. Diseñada para optimizar la recopilación de enlaces, simplificando el proceso de descarga y análisis de sentencias judiciales.",
     image: "img/projects/cendoj.webp",
-    techs: ["javascript", "html", "css"],
+    techs: ["javascript", "python", "html", "css"],
   },
   {
     title: "SearchMore Browser",
