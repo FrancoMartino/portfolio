@@ -11,13 +11,9 @@ export default function Presentation() {
         Soluciono problemas, desarrollando soluciones.
       </h3>
       <div className="flex gap-4 sm:flex-row flex-col mt-4">
-        <Button
-          label="Descargar CV"
-          icon={BiDownload}
-          onClick={() => {
-            alert("a");
-          }}
-        />
+        <a href="cv.pdf" download="cv.pdf">
+          <Button label="Descargar CV" icon={BiDownload} />
+        </a>
         <a href="#contact">
           <Button label="Quiero contactarme" secondary />
         </a>
