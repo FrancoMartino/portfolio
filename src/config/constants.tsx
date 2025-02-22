@@ -147,11 +147,6 @@ export const COURSES = [
     startYear: 2025,
   },
   {
-    title: "Curso - Networking Basics",
-    institution: "Cisco Networking Academy",
-    startYear: 2024,
-  },
-  {
     title: "Curso - Programación en Python",
     institution: "Academia BA Emprende",
     startYear: 2024,
