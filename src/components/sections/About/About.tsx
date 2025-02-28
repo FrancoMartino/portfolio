@@ -19,8 +19,11 @@ export default function About() {
           </h3>
           <h3 className="text-2xl">Desarrollador de software</h3>
           <p className="text-lg">
-            Soy Argentino, tengo {calculateYearsPassed("2006-11-04")} años, y
-            una gran pasión por el desarrollo.
+            Soy un desarrollador de software argentino de{" "}
+            {calculateYearsPassed("2006-11-04")} años, apasionado por crear
+            soluciones tecnológicas innovadoras. Me destaco por mi capacidad de
+            aprendizaje rápido y mi dedicación constante al crecimiento
+            profesional.
           </p>
           <Skills soft className="mt-4 md:!justify-start justify-center" />
         </span>

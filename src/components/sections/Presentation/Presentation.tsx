@@ -8,7 +8,7 @@ export default function Presentation() {
     <div className="relative min-h-lvh flex flex-col justify-center w-full">
       <TypewritterHeader />
       <h3 className="text-3xl font-bold font-header text-gray-400 select-none">
-        Soluciono problemas, desarrollando soluciones.
+        Construyendo el futuro, línea por línea.
       </h3>
       <div className="flex gap-4 sm:flex-row flex-col mt-4">
         <a href="cv" download="CV_FrancoMartino.pdf">
