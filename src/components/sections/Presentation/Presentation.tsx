@@ -11,7 +11,7 @@ export default function Presentation() {
         Construyendo el futuro, línea por línea.
       </h3>
       <div className="flex gap-4 sm:flex-row flex-col mt-4">
-        <a href="cv" download="CV_FrancoMartino.pdf">
+        <a href="cv.pdf" download="CV_FrancoMartino.pdf">
           <Button label="Descargar CV" icon={BiDownload} />
         </a>
         <a href="#contact">
