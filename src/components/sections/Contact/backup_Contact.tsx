@@ -127,34 +127,37 @@ export default function Contact() {
         className="flex flex-col gap-4 w-full max-w-xl"
       >
         <div className="flex flex-col gap-2">
+          <label htmlFor="name">Nombre completo</label>
           <input
-            className="gap-2 p-4 focus:outline-none px-4 bg-transparent text-white border-b-2 border-green-300"
+            className="gap-2 p-2 focus:outline-none px-4 rounded-full bg-gray-700 text-white shadow-lg shadow-gray-700/30"
             type="text"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Nombre completo"
+            placeholder="Ingresa tu nombre completo"
             required
           />
         </div>
         <div className="flex flex-col gap-2">
+          <label htmlFor="email">Correo electrónico</label>
           <input
-            className="gap-2 p-4 focus:outline-none px-4 bg-transparent text-white border-b-2 border-green-300"
+            className="gap-2 p-2 focus:outline-none px-4 rounded-full bg-gray-700 text-white shadow-lg shadow-gray-700/30"
             type="email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Correo electrónico"
+            placeholder="Ingresa tu correo electrónico"
             required
           />
         </div>
         <div className="flex flex-col gap-2">
+          <label htmlFor="message">Mensaje</label>
           <textarea
-            className="gap-2 p-4 focus:outline-none px-4 bg-transparent min-h-24 text-white border-b-2 border-green-300"
+            className="gap-2 p-2 focus:outline-none px-4 rounded-2xl bg-gray-700 text-white min-h-32 shadow-lg shadow-gray-700/30"
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Mensaje"
+            placeholder="Escribe tu mensaje aquí"
             required
           />
         </div>
