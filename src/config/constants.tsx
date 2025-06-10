@@ -171,7 +171,7 @@ export const PROJECTS = [
       "Portfolio interactivo desarrollado con React, TailwindCSS y TypeScript. Presenta mis proyectos y habilidades con un diseño limpio y funcional.",
     image: "img/projects/portfolio.webp",
     link: "/",
-    openSource: true,
+    openSource: false,
     techs: ["react", "tailwindcss", "html", "typescript"],
   },
   {
