@@ -135,7 +135,7 @@ export const EDUCATIONS = [
   },
   {
     title: "Ingeniería en Informática",
-    institution: "UNDAV",
+    institution: "UADE",
     startYear: 2025,
   },
 ];
