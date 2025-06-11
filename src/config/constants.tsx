@@ -74,12 +74,6 @@ export const TECHS = [
     link: "https://powerapps.com",
   },
   {
-    name: "notion",
-    title: "Notion",
-    icon: "img/icons/notion.webp",
-    link: "https://notion.com",
-  },
-  {
     name: "figma",
     title: "Figma",
     icon: "img/icons/figma.webp",
