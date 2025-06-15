@@ -116,10 +116,9 @@ export const TYPEWRITTER_HEADER = [
 
 export const EDUCATIONS = [
   {
-    title: "Técnicatura en Electrónica",
-    institution: "EEST N°3",
-    startYear: 2018,
-    endYear: 2024,
+    title: "Ingeniería en Informática",
+    institution: "UADE",
+    startYear: 2025,
   },
   {
     title: "Tramo de Formación Pedagógica",
@@ -128,9 +127,10 @@ export const EDUCATIONS = [
     endYear: 2025,
   },
   {
-    title: "Ingeniería en Informática",
-    institution: "UADE",
-    startYear: 2025,
+    title: "Técnicatura en Electrónica",
+    institution: "EEST N°3",
+    startYear: 2018,
+    endYear: 2024,
   },
 ];
 
