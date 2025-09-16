@@ -186,4 +186,14 @@ export const PROJECTS = [
     image: "img/projects/searchmore.webp",
     techs: ["javascript", "html", "css"],
   },
+  {
+    title: "Portfolio",
+    year: 2025,
+    description:
+      "Portfolio interactivo desarrollado con React, TailwindCSS y TypeScript. Presenta mis proyectos y habilidades con un diseño limpio y funcional.",
+    image: "img/projects/portfolio.webp",
+    link: "/",
+    openSource: false,
+    techs: ["react", "tailwindcss", "html", "typescript"],
+  },
 ];
