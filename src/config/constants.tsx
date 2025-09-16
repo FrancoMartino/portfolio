@@ -83,12 +83,6 @@ export const TECHS = [
 
 export const SOFT_SKILLS = [
   {
-    name: "leadership",
-    title: "Liderazgo",
-    icon: "",
-    link: "",
-  },
-  {
     name: "communication",
     title: "Comunicación",
     icon: "",
@@ -159,24 +153,6 @@ export const COURSES = [
 
 export const PROJECTS = [
   {
-    title: "Portfolio",
-    year: 2025,
-    description:
-      "Portfolio interactivo desarrollado con React, TailwindCSS y TypeScript. Presenta mis proyectos y habilidades con un diseño limpio y funcional.",
-    image: "img/projects/portfolio.webp",
-    link: "/",
-    openSource: false,
-    techs: ["react", "tailwindcss", "html", "typescript"],
-  },
-  {
-    title: "Massive CF",
-    year: 2025,
-    description:
-      "Extensión para navegadores con la función administrar listas de mejores amigos en Instagram. La API oficial no permite hacerlo en masa, pero Massive CF lo hace fácil y rápido, ideal para creadores y cuentas comerciales.",
-    image: "img/projects/massivecf.webp",
-    techs: ["javascript", "html", "css"],
-  },
-  {
     title: "Cod-ES",
     year: 2024,
     description:
@@ -185,6 +161,14 @@ export const PROJECTS = [
     link: "https://github.com/FrancoMartino/Cod-ES",
     openSource: true,
     techs: ["cpp", "arduino"],
+  },
+  {
+    title: "Massive CF",
+    year: 2025,
+    description:
+      "Extensión para navegadores con la función administrar listas de mejores amigos en Instagram. La API oficial no permite hacerlo en masa, pero Massive CF lo hace fácil y rápido, ideal para creadores y cuentas comerciales.",
+    image: "img/projects/massivecf.webp",
+    techs: ["javascript", "html", "css"],
   },
   {
     title: "CENDOJ Extractor",
